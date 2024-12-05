@@ -7,7 +7,8 @@ export function Footer() {
     <>
       <Separator />
 
-      <footer className="pt-8 flex flex-col items-center justify-center gap-4">
+      <footer className="pt-8 flex flex-col items-center justify-center">
+        <p>Valdir Marques - Eletricista</p>
         <div className="flex gap-4 select-none">
           <Link
             href={"https://www.instagram.com/tecnico.eletrico.valdir/"}
@@ -27,7 +28,7 @@ export function Footer() {
             Whatsapp
           </Link>
         </div>
-        <p className="opacity-50">Valdir Marques - Eletricista</p>
+        <p className="pt-4 text-muted-foreground">&copy; Criado por Jessica Bandeira</p>
       </footer>
     </>
   );
