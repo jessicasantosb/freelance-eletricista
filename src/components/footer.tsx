@@ -19,7 +19,7 @@ export function Footer() {
           </Link>
 
           <Link
-            href={"https://www.instagram.com/tecnico.eletrico.valdir/"}
+            href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER}`}
             target="_blank"
             className="p-2 rounded-sm flex items-center gap-1 hover:underline underline-offset-2 hover:bg-gradient-to-r from-[#128c7e]/60 to-[#25d366]/60"
           >
