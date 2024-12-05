@@ -7,7 +7,8 @@ const outfit = Roboto_Condensed({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Valdir Marques - Eletricista",
-  description: ".",
+  description:
+    "Especialista em serviços de eletricidade em Belo Horizonte! Profissional experiente e treinado, oferecendo atendimento de excelência na capital mineira. Soluções completas para instalações elétricas, manutenções, e reparos com segurança, qualidade e eficiência. Confie em quem entende de energia!",
 };
 
 export default function RootLayout({
