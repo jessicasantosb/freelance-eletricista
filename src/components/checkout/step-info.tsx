@@ -84,19 +84,19 @@ export function StepInfo({ setStep }: SetStepProps) {
                       <SelectValue placeholder="selecione o tipo de serviço" />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="installations">
+                      <SelectItem value="Instalações Elétricas">
                         Instalações Elétricas
                       </SelectItem>
-                      <SelectItem value="maintenance">
+                      <SelectItem value="Manutenção e Reparos">
                         Manutenção e Reparos
                       </SelectItem>
-                      <SelectItem value="automation">
+                      <SelectItem value="Automação e Segurança">
                         Automação e Segurança
                       </SelectItem>
-                      <SelectItem value="consulting">
+                      <SelectItem value="Consultoria e Projeto">
                         Consultoria e Projeto
                       </SelectItem>
-                      <SelectItem value="others">Outros</SelectItem>
+                      <SelectItem value="Outros">Outros</SelectItem>
                     </SelectContent>
                   </Select>
                 </FormControl>
@@ -120,8 +120,8 @@ export function StepInfo({ setStep }: SetStepProps) {
                       <SelectValue placeholder="selecione a urgência do serviço" />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="emergency">Emergência</SelectItem>
-                      <SelectItem value="schedule">
+                      <SelectItem value="Emergência">Emergência</SelectItem>
+                      <SelectItem value="Agendamento para data específica">
                         Agendamento para data específica
                       </SelectItem>
                     </SelectContent>
