@@ -1,7 +1,10 @@
+import Image from "next/image";
+
 export function Logo() {
   return (
-    <p className="tracking-tight text-md">
-      <span className="font-bold">Valdir</span> Marques
-    </p>
+    <div className="flex items-center gap-2 opacity-50">
+      <Image alt="logo" src={"/images/logo.svg"} width={40} height={25} />
+      <h4 className="tracking-wider">VALDIR MARQUES</h4>
+    </div>
   );
 }
