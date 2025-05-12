@@ -29,11 +29,11 @@ export function HeaderMenu() {
         </DropdownMenuItem>
         <DropdownMenuItem onClick={handleCloseMenu}>
           <Workflow />
-          <Link href={"/serviços"}>Serviços</Link>
+          <Link href={"/services"}>Serviços</Link>
         </DropdownMenuItem>
         <DropdownMenuItem onClick={handleCloseMenu}>
           <InfoIcon />
-          <Link href={"/informações"}>Informações</Link>
+          <Link href={"/informations"}>Informações</Link>
         </DropdownMenuItem>
         <DropdownMenuItem onClick={handleCloseMenu}>
           <User />

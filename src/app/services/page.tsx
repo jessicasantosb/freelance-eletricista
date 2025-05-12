@@ -1,7 +1,7 @@
 import { Title } from "@/components/ui/title";
 import { Workflow } from "lucide-react";
 import Image from "next/image";
-import { List } from "./list/list";
+import { List } from "./(list)/list";
 
 export const metadata = {
   title: "Serviços",
@@ -15,14 +15,14 @@ export default function Services() {
         <span className="md:hidden">{<Workflow />}</span>
         Serviços Emergenciais
       </Title>
-      <div className="pt-10 flex justify-between gap-4">
+      <div className="pt-10 lg:ml-12 flex gap-4">
         <List />
         <div className="hidden md:block relative flex-1 select-none">
           <Image
             alt="circuit"
             src={"/images/circuit.png"}
             fill
-            className="absolute object-contain rounded-sm"
+            className="absolute object-contain"
           />
         </div>
       </div>

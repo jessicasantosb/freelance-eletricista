@@ -9,7 +9,7 @@ export function List() {
 
   return (
     <div className="flex flex-col justify-between items-center">
-      <ul className="pl-8 pb-8 text-xl lg:text-2xl list-disc [&>*]:pb-4">
+      <ul className="pb-8 text-xl lg:text-2xl list-disc [&>*]:pb-4">
         <li>Queda de energia parcial ou total</li>
         <li>Curto-circuito e disjuntores desarmando</li>
         <li>Troca e reparo de disjuntores queimados</li>
