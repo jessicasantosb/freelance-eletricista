@@ -1,6 +1,5 @@
 export * from  './footer'
 export * from  './header'
-export * from  './home-image'
 export * from  './home-message'
 export * from  './logo'
 export * from  './message-trigger'

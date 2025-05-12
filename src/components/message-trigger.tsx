@@ -9,13 +9,14 @@ export function MessageTrigger() {
   const [checkoutOpen, setCheckoutOpen] = useState(false);
 
   return (
-    <section>
-      <p className="text-2xl pb-2">
-        Precisa de um <span className="text-secondary">eletricista</span>? Estou
-        aqui para ajudar!
+    <section className="text-center lg:text-left">
+      <p className="text-2xl md:text-3xl pb-4">
+        Anda sem tempo e precisa fazer aqueles{" "}
+        <span className="text-secondary">reparos em sua casa ou empresa</span>? Deixe com
+        quem entende!
       </p>
       <Button
-        className="h-14 uppercase text-xl bg-secondary"
+        className="h-14 md:h-20 uppercase text-2xl md:text-4xl bg-secondary shadow-2xl"
         onClick={() => setCheckoutOpen(true)}
       >
         Fale Comigo
