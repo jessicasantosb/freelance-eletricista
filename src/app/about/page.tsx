@@ -15,7 +15,7 @@ export default function About() {
         Sobre mim
       </Title>
 
-      <div className="min-h-[70dvh] max-w-[70%] mx-auto pt-8 text-center flex justify-between gap-4">
+      <div className="min-h-[70dvh] md:max-w-[70%] mx-auto pt-8 text-center flex justify-between gap-4">
         <div className="lg:w-[50%]">
           <h2 className="text-secondary tracking-widest text-3xl">
             Segurança é minha responsabilidade

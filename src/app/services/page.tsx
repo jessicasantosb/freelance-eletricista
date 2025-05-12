@@ -10,12 +10,12 @@ export const metadata = {
 
 export default function Services() {
   return (
-    <main className="min-h-[70dvh] p-8">
+    <main className="min-h-[70dvh] p-4">
       <Title>
         <span className="md:hidden">{<Workflow />}</span>
         Serviços Emergenciais
       </Title>
-      <div className="pt-10 lg:ml-12 flex gap-4">
+      <div className="pt-10 flex gap-4">
         <List />
         <div className="hidden md:block relative flex-1 select-none">
           <Image

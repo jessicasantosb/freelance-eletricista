@@ -15,13 +15,13 @@ export const metadata = {
 
 export default function Informations() {
   return (
-    <main className="min-h-[70dvh] max-w-[70%] mx-auto pt-8 text-center flex flex-col items-center">
+    <main className="min-h-[70dvh] max-w-[70%] mx-auto pt-8 px-4 text-center flex flex-col items-center">
       <Title>
         <span className="md:hidden">{<InfoIcon />}</span>
         Informações sobre meu serviço
       </Title>
 
-      <div className="py-8 text-2xl [&>*]:flex [&>*]:gap-2 [&>*]:items-center [&>*]:m-4 [&>*]:py-2 [&>*]:px-4 [&>*]:border-2 [&>*]:shadow-md [&>*]:shadow-[#C88A04]">
+      <div className="py-8 text-xl md:text-2xl [&>*]:flex [&>*]:gap-2 [&>*]:items-center [&>*]:m-4 [&>*]:py-2 [&>*]:px-4 [&>*]:border-2 [&>*]:shadow-md [&>*]:shadow-[#C88A04]">
         <p>
           <Zap /> Atendimento rápido
         </p>

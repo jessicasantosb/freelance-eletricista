@@ -9,7 +9,7 @@ export function List() {
 
   return (
     <div className="flex flex-col justify-between items-center">
-      <ul className="pb-8 text-xl lg:text-2xl list-disc [&>*]:pb-4">
+      <ul className="pb-8 pl-4 md:pl-12 text-xl lg:text-2xl list-disc [&>*]:pb-4">
         <li>Queda de energia parcial ou total</li>
         <li>Curto-circuito e disjuntores desarmando</li>
         <li>Troca e reparo de disjuntores queimados</li>
@@ -22,7 +22,7 @@ export function List() {
       </ul>
 
       <Button
-        className="h-14 uppercase text-2xl bg-secondary shadow-2xl"
+        className="h-14 uppercase text-lg md:text-2xl bg-secondary shadow-2xl"
         onClick={() => setCheckoutOpen(true)}
       >
         Emergencia? Fale comigo!

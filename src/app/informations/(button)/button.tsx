@@ -10,7 +10,7 @@ export function InfoButton() {
   return (
     <>
       <Button
-        className="h-14 uppercase text-2xl bg-secondary shadow-2xl"
+        className="h-14 uppercase text-lg md:text-2xl bg-secondary shadow-2xl"
         onClick={() => setCheckoutOpen(true)}
       >
         Entre em contato agora mesmo!
