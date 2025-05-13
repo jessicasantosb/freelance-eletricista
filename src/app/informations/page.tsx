@@ -35,7 +35,7 @@ export default function Informations() {
         <p>
           <HandCoins /> Pagamento em dinheiro ou PIX
         </p>
-        <TalkToMeButton text="Entre em contato agora mesmo!" />
+        <TalkToMeButton text="Entre em contato!" />
       </div>
     </main>
   );
