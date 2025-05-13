@@ -29,8 +29,7 @@ export default function Services() {
             <li>Troca de resistência de chuveiro e aquecedores</li>
             <li>Instalação emergencial de iluminação e tomadas</li>
           </ul>
-
-          <TalkToMeButton text="Emergencia? Fale comigo!" />
+          <TalkToMeButton text="Emergência? Fale comigo!" />
         </div>
         <div className="hidden md:block relative flex-1 select-none">
           <Image
