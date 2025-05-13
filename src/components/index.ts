@@ -1,6 +1,6 @@
 export * from  './footer'
 export * from  './header'
 export * from  './home-message'
-export * from  './logo'
+export * from  './shared/logo'
 export * from  './message-trigger'
 export * from  './mode-toggle'

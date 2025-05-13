@@ -3,23 +3,18 @@
 import { InfoIcon, User, Workflow } from "lucide-react";
 import Link from "next/link";
 
-import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { HeaderMenu } from "./header-menu";
 import { ModeToggle } from "./mode-toggle";
+import { Logo } from "./shared/logo";
 
 export function Header() {
   const pathname = usePathname();
 
   return (
     <header className="w-full p-4 flex flex-col sm:flex-row items-center justify-between gap-4">
-      <Link href={"/"} className="relative size-12 select-none">
-        <Image
-          alt="logo"
-          src={"/images/logo.svg"}
-          fill
-          className="absolute object-cover rounded-full"
-        />
+      <Link href={"/"} className="select-none">
+        <Logo />
       </Link>
       <div className="flex items-center gap-6">
         <div className="hidden md:flex items-center gap-6">
