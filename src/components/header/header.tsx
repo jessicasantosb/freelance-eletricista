@@ -2,11 +2,11 @@
 
 import { InfoIcon, User, Workflow } from "lucide-react";
 import Link from "next/link";
-
 import { usePathname } from "next/navigation";
+
+import { Logo } from "../shared/logo";
 import { HeaderMenu } from "./header-menu";
 import { ModeToggle } from "./mode-toggle";
-import { Logo } from "./shared/logo";
 
 export function Header() {
   const pathname = usePathname();

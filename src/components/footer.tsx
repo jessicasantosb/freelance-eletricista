@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { FaInstagram, FaWhatsapp } from "react-icons/fa";
+
 import { Separator } from "./ui/separator";
 
 export function Footer() {

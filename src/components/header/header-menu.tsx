@@ -2,6 +2,7 @@
 
 import { Home, InfoIcon, User, Workflow } from "lucide-react";
 import Link from "next/link";
+import { useState } from "react";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -10,7 +11,6 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { useState } from "react";
 
 export function HeaderMenu() {
   const [open, setOpen] = useState(false);

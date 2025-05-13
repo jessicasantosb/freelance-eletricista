@@ -1,6 +1,7 @@
-import { Title } from "@/components/ui/title";
-import { User, Workflow } from "lucide-react";
+import { User } from "lucide-react";
 import Image from "next/image";
+
+import { Title } from "@/components/ui/title";
 
 export const metadata = {
   title: "Sobre Mim",

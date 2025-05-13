@@ -1,4 +1,3 @@
-import { Title } from "@/components/ui/title";
 import {
   BadgeCheck,
   HandCoins,
@@ -6,7 +5,9 @@ import {
   MapPinHouse,
   Zap,
 } from "lucide-react";
-import { InfoButton } from "./(button)/button";
+
+import { TalkToMeButton } from "@/components/shared/button";
+import { Title } from "@/components/ui/title";
 
 export const metadata = {
   title: "Informações",
@@ -21,7 +22,7 @@ export default function Informations() {
         Informações sobre meu serviço
       </Title>
 
-      <div className="py-8 text-xl md:text-2xl [&>*]:flex [&>*]:gap-2 [&>*]:items-center [&>*]:m-4 [&>*]:py-2 [&>*]:px-4 [&>*]:border-2 [&>*]:shadow-md [&>*]:shadow-[#C88A04]">
+      <div className="py-8 text-xl md:text-2xl [&>*]:flex [&>*]:gap-2 [&>*]:items-center [&>*]:m-4 [&>*]:min-h-14 md:[&>*]:min-h-16 [&>*]:px-4 [&>*]:border-2 [&>*]:shadow-md [&>*]:shadow-[#C88A04]">
         <p>
           <Zap /> Atendimento rápido
         </p>
@@ -34,7 +35,7 @@ export default function Informations() {
         <p>
           <HandCoins /> Pagamento em dinheiro ou PIX
         </p>
-        <InfoButton />
+        <TalkToMeButton text="Entre em contato agora mesmo!" />
       </div>
     </main>
   );
