@@ -51,3 +51,18 @@ export const fromLeftVariants: Variants = {
     transition: { duration: 0.6, delay: 0.5, ease: "linear" },
   }),
 };
+
+export const listVariants: Variants = {
+  hidden: {
+    opacity: 0,
+    x: "-100%",
+  },
+  visible: (custom) => ({
+    opacity: 1,
+    x: 0,
+    transition: {
+      delay: (custom + 1) / 5,
+      duration: 0.5,
+    },
+  }),
+};
