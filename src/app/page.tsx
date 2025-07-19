@@ -1,17 +1,28 @@
 import { PlugZap } from "lucide-react";
 import Image from "next/image";
+import * as motion from "motion/react-client";
 
 import { TalkToMeButton } from "@/components/shared/button";
+import {
+  fromBottomVariants,
+  fromLeftVariants,
+  fromRightVariants,
+} from "@/components/shared/animation-variants";
 
 export default function Home() {
   return (
     <main className="max-w-7xl mx-auto p-4">
       <div className="mb-6 flex flex-col lg:flex-row items-center">
-        <div className="flex flex-col justify-between items-center lg:items-start">
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={fromLeftVariants}
+          className="flex flex-col justify-between items-center lg:items-start"
+        >
           <h1 className="pb-4 lg:pb-0 uppercase font-bold flex flex-col items-center gap-2 lg:items-start text-2xl md:text-5xl md:tracking-widest">
             Especialista em Serviços de{" "}
             <span className="text-secondary md:tracking-widest text-5xl md:text-8xl flex items-center">
-              <PlugZap className="size-10 md:size-20" /> Eletricidade
+              <PlugZap className="size-10 md:size-20 animate-pulse" /> Eletricidade
             </span>
             <span className="md:tracking-tighter text-4xl md:text-8xl ">
               {" "}
@@ -28,26 +39,36 @@ export default function Home() {
               Confiança e segurança para resolver qualquer problema elétrico.
             </span>
           </h3>
-        </div>
+        </motion.div>
 
-        <div className="relative size-64 lg:size-[29.5rem] select-none">
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={fromRightVariants}
+          className="relative size-64 lg:size-[29.5rem] select-none"
+        >
           <Image
             alt="ferramentas"
             src={"/images/avatar.png"}
             fill
             className="absolute object-cover rounded-full"
           />
-        </div>
+        </motion.div>
       </div>
-      <div className="text-center lg:text-left">
+      <motion.div
+        initial="hidden"
+        animate="visible"
+        variants={fromBottomVariants}
+        className="text-center lg:text-left"
+      >
         <p className="text-2xl md:text-3xl pb-4">
           Anda sem tempo e precisa fazer aqueles{" "}
           <span className="text-secondary">reparos em sua casa ou empresa</span>
           ? Deixe com quem entende!
         </p>
 
-        <TalkToMeButton text="Fale Comigo!"/>
-      </div>
+        <TalkToMeButton text="Fale Comigo!" />
+      </motion.div>
     </main>
   );
 }
