@@ -5,7 +5,7 @@ import { TalkToMeButton } from "@/components/shared/button";
 
 export default function Home() {
   return (
-    <main className="w-full p-6">
+    <main className="max-w-7xl mx-auto p-4">
       <div className="mb-6 flex flex-col lg:flex-row items-center">
         <div className="flex flex-col justify-between items-center lg:items-start">
           <h1 className="pb-4 lg:pb-0 uppercase font-bold flex flex-col items-center gap-2 lg:items-start text-2xl md:text-5xl md:tracking-widest">

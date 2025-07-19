@@ -16,12 +16,12 @@ export default function About() {
         Sobre mim
       </Title>
 
-      <div className="min-h-[70dvh] md:max-w-[70%] mx-auto pt-8 text-center flex justify-between gap-4">
+      <div className="min-h-[70dvh] md:max-w-7xl mx-auto pt-8 text-center flex justify-between gap-6">
         <div className="lg:w-[50%]">
           <h2 className="text-secondary tracking-widest text-3xl">
             Segurança é minha responsabilidade
           </h2>
-          <p className="pt-8 text-xl leading-8">
+          <p className="pt-8 text-2xl leading-relaxed">
             Olá! Sou um eletricista especializado em serviços residenciais e
             comerciais, pronto para atender suas necessidades elétricas com
             eficiência e segurança. Com anos de experiência, ofereço soluções

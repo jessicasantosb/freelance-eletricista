@@ -16,7 +16,7 @@ export const metadata = {
 
 export default function Informations() {
   return (
-    <main className="min-h-[70dvh] max-w-[70%] mx-auto pt-8 px-4 text-center flex flex-col items-center">
+    <main className="min-h-[70dvh] max-w-7xl mx-auto pt-8 px-4 text-center flex flex-col items-center">
       <Title>
         <span className="md:hidden">{<InfoIcon />}</span>
         Informações sobre meu serviço

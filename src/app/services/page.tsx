@@ -11,7 +11,7 @@ export const metadata = {
 
 export default function Services() {
   return (
-    <main className="min-h-[70dvh] p-4">
+    <main className="min-h-[70dvh] max-w-7xl mx-auto p-4">
       <Title>
         <span className="md:hidden">{<Workflow />}</span>
         Serviços Emergenciais
