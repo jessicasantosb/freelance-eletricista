@@ -34,9 +34,11 @@ export const fromBottomVariants: Variants = {
 
 export const fromRightVariants: Variants = {
   hidden: {
-    transform: "translateX(200%)",
+    opacity: 0,
+    transform: "translateX(100%)",
   },
   visible: () => ({
+    opacity: 1,
     transform: "translateX(0)",
     transition: { duration: 0.6, delay: 0.5, ease: "linear" },
   }),
@@ -44,9 +46,11 @@ export const fromRightVariants: Variants = {
 
 export const fromLeftVariants: Variants = {
   hidden: {
-    transform: "translateX(-200%)",
+    opacity: 0,
+    transform: "translateX(-100%)",
   },
   visible: () => ({
+    opacity: 1,
     transform: "translateX(0)",
     transition: { duration: 0.6, delay: 0.5, ease: "linear" },
   }),
