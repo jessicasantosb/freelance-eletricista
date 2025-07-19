@@ -1,7 +1,12 @@
 import { User } from "lucide-react";
 import Image from "next/image";
+import * as motion from "motion/react-client";
 
 import { Title } from "@/components/ui/title";
+import {
+  fromLeftVariants,
+  fromRightVariants,
+} from "@/components/shared/animation-variants";
 
 export const metadata = {
   title: "Sobre Mim",
@@ -17,7 +22,12 @@ export default function About() {
       </Title>
 
       <div className="min-h-[70dvh] md:max-w-7xl mx-auto pt-8 text-center flex justify-between gap-6">
-        <div className="lg:w-[50%]">
+        <motion.div
+          initial="hidden"
+          animate={"visible"}
+          variants={fromLeftVariants}
+          className="lg:w-[50%]"
+        >
           <h2 className="text-secondary tracking-widest text-3xl">
             Segurança é minha responsabilidade
           </h2>
@@ -31,16 +41,21 @@ export default function About() {
             Estou aqui para transformar sua experiência elétrica em algo
             tranquilo e confiável. Vamos juntos iluminar seu espaço!
           </p>
-        </div>
+        </motion.div>
 
-        <div className="hidden lg:block relative flex-1 select-none">
+        <motion.div
+          initial="hidden"
+          animate={"visible"}
+          variants={fromRightVariants}
+          className="hidden lg:block relative flex-1 select-none"
+        >
           <Image
             alt="sobre mim"
             src={"/images/about.png"}
             fill
             className="absolute object-cover"
           />
-        </div>
+        </motion.div>
       </div>
     </main>
   );
