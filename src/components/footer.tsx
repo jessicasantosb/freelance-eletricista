@@ -9,7 +9,7 @@ export function Footer() {
       <Separator />
 
       <footer className="py-8 flex flex-col items-center justify-center">
-        <p>Valdir Marques - Eletricista</p>
+        <p>Valdir Marques - Técnico em Engenharia Elétrica</p>
         <div className="flex gap-4 select-none">
           <Link
             href={"https://www.instagram.com/tecnico.eletrico.valdir/"}
@@ -29,15 +29,19 @@ export function Footer() {
             Whatsapp
           </Link>
         </div>
-        <p className="pt-4 text-muted-foreground">
-          &copy; Criado por{" "}
-          <Link
-            href={`${process.env.NEXT_PUBLIC_PORTFOLIO_LINK}`}
-            target="_blank"
-            className="hover:opacity-90"
-          >
-            Jessica Bandeira
-          </Link>
+
+        <p className="pt-4 text-muted-foreground flex flex-col md:flex-row md:gap-2">
+          Todos os direitos reservados.
+          <span>
+            Desenvolvido por &copy;{" "}
+            <Link
+              href={`${process.env.NEXT_PUBLIC_PORTFOLIO_LINK}`}
+              target="_blank"
+              className="hover:opacity-90"
+            >
+              Jessica
+            </Link>
+          </span>{" "}
         </p>
       </footer>
     </>
