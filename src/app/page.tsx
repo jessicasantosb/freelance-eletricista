@@ -12,7 +12,7 @@ import {
 export default function Home() {
   return (
     <main className="max-w-7xl mx-auto p-4">
-      <div className="mb-6 flex flex-col lg:flex-row items-center">
+      <div className="mb-8 flex flex-col lg:flex-row items-center">
         <motion.div
           initial="hidden"
           animate="visible"
@@ -59,7 +59,7 @@ export default function Home() {
         initial="hidden"
         animate="visible"
         variants={fromBottomVariants}
-        className="text-center lg:text-left"
+        className="mb-8 text-center lg:text-left"
       >
         <p className="text-2xl md:text-3xl pb-4">
           Anda sem tempo e precisa fazer aqueles{" "}
